@@ -22,6 +22,6 @@ test text
 - even more stuff
 
 ### Pair Programming
-The driver was [Daniel Haugen](https://www.github.com/danielhaugen22). <br/>
+The driver was [Daniel Haugen](https://www.github.com/danielhaugen22). 
 The navigator was Sammy Antigua.<br/>
 
