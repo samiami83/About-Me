@@ -28,8 +28,6 @@ function bornHere () {
 
 bornHere();
 
-
-
 function myServ (){
 
 let myServ = prompt('Did I serve in the Space Force? (y/n)').toLowerCase();
@@ -133,6 +131,7 @@ myGoals();
 
 // Number Game
 
+function numberGame () {
 let counter = 0;
 while(counter < 4) {
     let guessNum = parseInt(prompt('Now, can you please guess a number 1-10?'));
@@ -151,9 +150,12 @@ while(counter < 4) {
         alert('You have exhausted your guesses, sorry.');
     }
 }
+};
+numberGame();
 
 // Second Number Game
 
+function numberGame2 () {
 let pets = ["fish",'snake','turtle','cat','dog','rabbit','zebra','armadillo','orangutan'];
 for(let i = 0;i < 6;i++) {
     let guessPet = prompt('What kind of animal makes for a good pet?').toLowerCase();
@@ -173,6 +175,9 @@ for(let i = 0;i < 6;i++) {
     alert('Sorry, guess again.');
 }
 alert('Possible correct answers include ' + pets);
+};
+
+numberGame2();
 
 alert('Looks like you got ' + rightAns + ' out of 7 answers correct!');
 confirm('Well, ' + userName + ', may you have a splendid day and thanks for stopping by!');
