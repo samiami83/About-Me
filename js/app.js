@@ -1,10 +1,13 @@
 "use strict";
-let rightAns = 0
+let rightAns = 0;
 let userName = prompt('What is your name?');
 alert('Hello ' + userName + ", it is a pleasure to have you here today.");
-let bornHere = prompt('Was I born on a planet other than Earth? (y/n)').toLowerCase();
 
-if(bornHere === 'y') {
+
+function bornHere () {
+  let bornHere = prompt('Was I born on a planet other than Earth? (y/n)').toLowerCase();
+
+  if(bornHere === 'y') {
     // console.log('Incorrect, I was born here on Earth.');
     alert('Incorrect, I was born here on Earth.');
 } else if (bornHere === 'yes') {
@@ -21,6 +24,13 @@ if(bornHere === 'y') {
 } else {
     alert('Yes or no answers only please.')
 }
+};
+
+bornHere();
+
+
+
+function myServ (){
 
 let myServ = prompt('Did I serve in the Space Force? (y/n)').toLowerCase();
 
@@ -41,6 +51,11 @@ if(myServ === 'y') {
 } else {
     alert('Yes or no answers only please.')
 }
+};
+
+myServ();
+
+function myJob() {
 
 let myJob = prompt('Did I pursue a career in the music industry? (y/n)').toLowerCase();
 
@@ -61,6 +76,11 @@ if(myJob === 'y') {
 } else {
     alert('Yes or no answers only please.')
 }
+};
+
+myJob();
+
+function gradSchool () {
 
 let gradSchool = prompt('Did I finish high-school? (y/n)').toLowerCase();
 
@@ -81,6 +101,11 @@ if(gradSchool === 'y') {
 } else {
     alert('Yes or no answers only please.')
 }
+};
+
+gradSchool();
+
+function myGoals () {
 
 let myGoals = prompt('Do I have any goals for my future? (y/n)').toLowerCase();
 
@@ -101,6 +126,12 @@ if(myGoals === 'y') {
 } else {
     alert('Yes or no answers only please.')
 }
+};
+
+myGoals();
+
+
+// Number Game
 
 let counter = 0;
 while(counter < 4) {
@@ -120,6 +151,8 @@ while(counter < 4) {
         alert('You have exhausted your guesses, sorry.');
     }
 }
+
+// Second Number Game
 
 let pets = ["fish",'snake','turtle','cat','dog','rabbit','zebra','armadillo','orangutan'];
 for(let i = 0;i < 6;i++) {
