@@ -1,3 +1,4 @@
 h1 {color: red; text-align: center; background-color: blue; font-size: xx-large;}
 h2 {color: blue; text-align: left; background-color: red; font-size: x-large;}
 p {color: yellow; background-color: black; border: chartreuse;}
+li {list-style-type: circle;}
