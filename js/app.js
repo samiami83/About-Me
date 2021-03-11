@@ -1,10 +1,13 @@
 "use strict";
-let rightAns = 0
+let rightAns = 0;
 let userName = prompt('What is your name?');
 alert('Hello ' + userName + ", it is a pleasure to have you here today.");
-let bornHere = prompt('Was I born on a planet other than Earth? (y/n)').toLowerCase();
 
-if(bornHere === 'y') {
+// question 1
+function bornHere () {
+  let bornHere = prompt('Was I born on a planet other than Earth? (y/n)').toLowerCase();
+
+  if(bornHere === 'y') {
     // console.log('Incorrect, I was born here on Earth.');
     alert('Incorrect, I was born here on Earth.');
 } else if (bornHere === 'yes') {
@@ -21,6 +24,11 @@ if(bornHere === 'y') {
 } else {
     alert('Yes or no answers only please.')
 }
+};
+
+bornHere();
+
+function myServ (){
 
 let myServ = prompt('Did I serve in the Space Force? (y/n)').toLowerCase();
 
@@ -41,6 +49,11 @@ if(myServ === 'y') {
 } else {
     alert('Yes or no answers only please.')
 }
+};
+
+myServ();
+
+function myJob() {
 
 let myJob = prompt('Did I pursue a career in the music industry? (y/n)').toLowerCase();
 
@@ -61,6 +74,11 @@ if(myJob === 'y') {
 } else {
     alert('Yes or no answers only please.')
 }
+};
+
+myJob();
+
+function gradSchool () {
 
 let gradSchool = prompt('Did I finish high-school? (y/n)').toLowerCase();
 
@@ -81,6 +99,11 @@ if(gradSchool === 'y') {
 } else {
     alert('Yes or no answers only please.')
 }
+};
+
+gradSchool();
+
+function myGoals () {
 
 let myGoals = prompt('Do I have any goals for my future? (y/n)').toLowerCase();
 
@@ -101,7 +124,14 @@ if(myGoals === 'y') {
 } else {
     alert('Yes or no answers only please.')
 }
+};
 
+myGoals();
+
+
+// Number Game
+
+function numberGame () {
 let counter = 0;
 while(counter < 4) {
     let guessNum = parseInt(prompt('Now, can you please guess a number 1-10?'));
@@ -120,7 +150,12 @@ while(counter < 4) {
         alert('You have exhausted your guesses, sorry.');
     }
 }
+};
+numberGame();
 
+// Second Number Game
+
+function numberGame2 () {
 let pets = ["fish",'snake','turtle','cat','dog','rabbit','zebra','armadillo','orangutan'];
 for(let i = 0;i < 6;i++) {
     let guessPet = prompt('What kind of animal makes for a good pet?').toLowerCase();
@@ -140,6 +175,9 @@ for(let i = 0;i < 6;i++) {
     alert('Sorry, guess again.');
 }
 alert('Possible correct answers include ' + pets);
+};
+
+numberGame2();
 
 alert('Looks like you got ' + rightAns + ' out of 7 answers correct!');
 confirm('Well, ' + userName + ', may you have a splendid day and thanks for stopping by!');
