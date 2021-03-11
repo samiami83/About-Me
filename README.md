@@ -22,6 +22,7 @@ test text
 - even more stuff
 
 ### Pair Programming
-The driver was [Daniel Haugen](https://www.github.com/danielhaugen22). 
+The driver was [Daniel Haugen](https://www.github.com/danielhaugen22). <br/>
 The navigator was Sammy Antigua.<br/>
 
+We updated the javascript code by wrapping all the questions in their own functions and calling them.
