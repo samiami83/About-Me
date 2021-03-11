@@ -3,7 +3,7 @@ let rightAns = 0;
 let userName = prompt('What is your name?');
 alert('Hello ' + userName + ", it is a pleasure to have you here today.");
 
-
+// question 1
 function bornHere () {
   let bornHere = prompt('Was I born on a planet other than Earth? (y/n)').toLowerCase();
 
